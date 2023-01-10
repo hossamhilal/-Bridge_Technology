@@ -18,21 +18,21 @@
     //     },5000);   
     // });
 
-    // // OPEN SIDE  MENU 
-    // $('.menuBtn').on('click', function () {
-    //     $('.navMenu').toggleClass('show');
-    //     $('.bodyOverlay').addClass('show');
-    //     setTimeout(function () {
-    //         $('body').addClass('stopScroll');
-    //     }, 100);
-    // });
+    // OPEN SIDE  MENU 
+    $('.menuBtn').on('click', function () {
+        $('.navMenu').toggleClass('show');
+        $('.bodyOverlay').addClass('show');
+        setTimeout(function () {
+            $('body').addClass('stopScroll');
+        }, 100);
+    });
 
-    // // CLOSE SIDE MENU 
-    // $('.bodyOverlay').on('click', function () {
-    //     $(this).removeClass('show');
-    //     $('.navMenu').removeClass('show');
-    //     $('body').removeClass('stopScroll');
-    // });
+    // CLOSE SIDE MENU 
+    $('.bodyOverlay').on('click', function () {
+        $(this).removeClass('show');
+        $('.navMenu').removeClass('show');
+        $('body').removeClass('stopScroll');
+    });
 
     
     // Partners Carousel 

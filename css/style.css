@@ -183,6 +183,22 @@ p {
     margin-inline-end: 12px;
 }
 
+@media screen and (max-width:768px) {
+    .siteBtn {
+        font-size: 13px;
+        height: 40px;
+    }
+    
+    .primaryBtn {
+        margin-inline-end: 15px;
+    }
+
+    .linkBtn {
+        font-size: 13px;
+    }
+}
+
+
 /**************************************************************************************************/
 /*******************************************    Header   ******************************************/
 /**************************************************************************************************/
@@ -281,7 +297,7 @@ p {
 @media screen and (max-width:768px) {
     .header {
         padding: 15px 0;
-    }
+    }    
 
     .logo {
         max-width: 100px;
@@ -293,7 +309,7 @@ p {
         right: 0;
         height: 100vh;
         width: 250px;
-        background: #210436;
+        background: #fff;
         z-index: 10;
         transition: all .7s ease-in-out;
         transform: translateX(100%);
@@ -312,7 +328,7 @@ p {
     .navMenu li {
         width: 100%;
         margin: 0;
-        border-bottom: 1px solid #1a022c;
+        border-bottom: 1px solid #e0fbff;
     }
 
     .navMenu a {
@@ -339,12 +355,17 @@ p {
         flex-direction: column;
         width: 25px;
         height: 18px;
+        margin-inline-start: 20px;
     }
 
     .menuBtn span {
         width: 100%;
         height: 2px;
-        background: var(--white);
+        background: #5584FF;
+    }
+
+    .menuBtn:hover span {
+        background: #0b42cd;
     }
 
     .bodyOverlay {
@@ -364,6 +385,16 @@ p {
     .bodyOverlay.show {
         opacity: 1;
         visibility: visible;
+    }
+
+    .header h1 {
+        font-size: 25px;
+        line-height: 1.6;
+    }
+    
+    p {
+        font-size: 14px;
+        line-height: 1.9;
     }
 }
 
@@ -423,7 +454,29 @@ p {
 }
 
 
-@media screen and (max-width:768px) {}
+@media screen and (max-width:768px) {
+    .post {
+        margin-bottom: 30px;
+    }
+    
+    .postVector {
+        height: 190px;
+    }
+
+    .post h2 {
+        font-size: 16px;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        min-height: 50px;
+    }
+    
+    .post p {
+        font-size: 13px;
+        min-height: 125px;
+    }
+}
 
 
 /**************************************************************************************************/
@@ -442,6 +495,7 @@ p {
 
 .secHead-center {
     align-items: center;
+    text-align: center;
 }
 
 .secHead h5 {
@@ -545,7 +599,38 @@ p {
     justify-content: center;
 }
 
-@media screen and (max-width:768px) {}
+@media screen and (max-width:768px) {  
+    .secHead h2 {
+        font-size: 20px;
+    }
+
+    .service {
+        margin-bottom: 30px;
+    }
+    
+    .serviceIcon img {
+        max-width: 60px;
+        margin-inline-start: 20px;
+    }
+    
+    .service h3 {
+        font-size: 16px;
+    }
+    
+    .servicesBtns .siteBtn {
+        padding: 0 13px;
+    }
+    
+    .servicesBtns .primaryBtn {
+        margin-inline-end: 5px;
+    }
+}
+
+@media (min-width:575px) and (max-width:768px) {
+    .service h3 {
+        min-height: 40px;
+    }
+}
 
 /******************************************************************************************************/
 /****************************************        Info Text     ****************************************/
@@ -627,8 +712,24 @@ p {
 }
 
 
+@media screen and (max-width:768px) {
+    .customNav {
+        margin-bottom: 45px;
+    }
+    
+    .customBtn {
+        width: 30px;
+        height: 30px;
+    }
+    
+    .partnersContent {
+        padding: 8%;
+    }
 
-@media screen and (max-width:768px) {}
+    .partner {
+        height: 200px;
+    }
+}
 
 /******************************************************************************************************/
 /****************************************         Footer      ****************************************/
@@ -723,7 +824,47 @@ p {
 }
 
 
-@media screen and (max-width:768px) {}
+@media screen and (max-width:768px) {
+    .featuresContent {
+        margin-bottom: 50px;
+    }
+    
+    .statistic {
+        padding: 10px;
+        width: 200px;
+    }
+    
+    .statistic h3 {
+        font-size: 25px;
+    }
+    
+    .statistic:nth-child(2) {
+        margin-inline-start: 0%;
+    }
+}
+
+@media (min-width:575px) and (max-width:768px) {
+    .features  .secHead {
+        margin-bottom: 15px;
+    }
+
+    .features  p {
+        margin: 0;
+    }
+
+    .features .siteBtn {
+        margin-top: 15px;
+    }
+
+    .featuresData {
+        height: 75%;
+        margin-top: 10%;
+    }
+
+    .statistic:nth-child(2) {
+        margin-inline-start: -10%;
+    }
+}
 
 /******************************************************************************************************/
 /****************************************        VIP Page      ****************************************/
@@ -780,7 +921,20 @@ p {
     text-transform: capitalize;
 }
 
-@media screen and (max-width:768px) {}
+@media (min-width:575px) and (max-width:768px) {
+    .empolyeevector {
+        height: 150px;
+    }
+    
+    .empolyee {
+        min-height: 225px;
+    }
+    
+    .empolyee:hover .empolyeevector {
+        width: 120px;
+        height: 120px;
+    }
+}
 
 /******************************************************************************************************/
 /****************************************     About     **********************************************/
@@ -805,7 +959,11 @@ p {
     transform: scale(1.1);
 }
 
-@media screen and (max-width:768px) {}
+@media screen and (max-width:768px) {
+    .client {
+        height: 100px;
+    }
+}
 
 /******************************************************************************************************/
 /*******************************************    Add Form  *********************************************/
@@ -937,7 +1095,47 @@ p {
     margin: 0;
 }
 
-@media screen and (max-width:768px) {}
+@media screen and (max-width:575px) {
+    .footerInfo {
+        margin-bottom: 90px;
+    }
+    
+    
+}
+
+@media screen and (max-width:768px) {
+    .client {
+        height: 100px;
+    }
+    
+    .footerContent {
+        padding: 8%;
+    }
+    
+    .footer h2 {
+        font-size: 24px;
+    }
+
+    .newsletter-form {
+        flex-direction: column;
+    }
+    
+    .newsletter-form .form-control {
+        margin-bottom: 20px;
+    }
+    
+    .copyright {
+        flex-direction: column;
+    }
+    
+    .footerMenu {
+        margin-bottom: 15px;
+    }
+
+    .footerMenu ul {
+        flex-wrap: wrap;
+    }
+}
 
 
 /*==========================||---------------------------||========================*/
