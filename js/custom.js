@@ -35,11 +35,11 @@
     // });
 
     
-    // Posts Carousel 
+    // Partners Carousel 
     let partnerOwl = $('.partnerOwl');
     partnerOwl.owlCarousel({
         loop:true,
-        margin:10,
+        margin:0,
         nav:false,
         dots: false,
         responsive:{
@@ -57,13 +57,44 @@
 
     // Go to the previous item
     $('.parntnerPrevious').click(function() {
-        partnerOwl.trigger('owl.prev');
+        partnerOwl.trigger('prev.owl.carousel');
     });
 
     // Go to the next item
     $('.parntnerNext').click(function() {
-        partnerOwl.trigger('owl.next');
+        partnerOwl.trigger('next.owl.carousel');
     });
+
+    // Team Carousel 
+    let teamOwl = $('.teamOwl');
+    teamOwl.owlCarousel({
+        loop:true,
+        margin:0,
+        nav:false,
+        dots: false,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:3
+            },
+            1000:{
+                items:4
+            }
+        }
+    });
+
+     // Go to the previous item
+     $('.teamPrevious').click(function() {
+        teamOwl.trigger('prev.owl.carousel');
+    });
+
+    // Go to the next item
+    $('.teamNext').click(function() {
+        teamOwl.trigger('next.owl.carousel');
+    });
+    
 
 
     // iniat WOW Js
