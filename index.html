@@ -14,10 +14,10 @@
     <link rel="stylesheet" href="css/style.css">
 
     <link rel="icon" href="images/xIcon.png" type="image/x-icon" />
-    <title> يلا فولورز </title>
+    <title> Bridge Technology </title>
 </head>
 
-<body class="instagramPage">
+<body>
 
     <!-- <div class="loader">
         <div class="loaderBox">
@@ -27,47 +27,48 @@
     </div> -->
     
     <!-- Header  -->
-    <header class="header">
-        <div class="container">
-            <div class="headeWrapper">
-                <a href="index.html" class="logo"> <img src="images/logo.png" alt="logo" class="img-fluid"> </a>
-                <div class="headerNav">
-                    <div class="navMenu">
-                        <ul>
-                            <li> <a href="index.html"> home </a></li>
-                            <li> <a href="services.html"> services </a></li>
-                            <li> <a href="portfolio.html"> portfolio </a></li>
-                            <li> <a href="team.html"> team </a></li>
-                            <li> <a href="contact.html"> contact us </a></li>
-                        </ul>   
-                    </div>
-                    <div class="social">
-                        <a href="#"> <i class="fab fa-instagram"></i> </a>
-                    </div>
-                    <div class="mb">
-                        <div class="menuBtn"> <span></span> <span></span> <span></span></div>
-                        <div class="bodyOverlay"></div>
+    <section class="header" id="home">
+        <div class="headerWrapper">
+            <div class="container">
+                <div class="navWrapper">
+                    <a href="index.html" class="logo"> <img src="images/logo.png" alt="logo" class="img-fluid"> </a>
+                    <div class="headerNav">
+                        <div class="navMenu">
+                            <ul>
+                                <li class="active"> <a href="#home" data-text="home"> home </a></li>
+                                <li> <a href="#services" data-text="services"> services </a></li>
+                                <li> <a href="#portfolio" data-text="portfolio"> portfolio </a></li>
+                                <li> <a href="#team" data-text="team"> team </a></li>
+                                <li> <a href="#contact" data-text="contact us"> contact us </a></li>
+                            </ul>   
+                        </div>
+                        <div class="social">
+                            <a href="#"> <i class="fab fa-instagram"></i> </a>
+                        </div>
+                        <div class="mb">
+                            <div class="menuBtn"> <span></span> <span></span> <span></span></div>
+                            <div class="bodyOverlay"></div>
+                        </div>
                     </div>
                 </div>
-            </div>
-
-            <div class="headerContent">
-                <div class="row">
-                    <div class="col-12 col-sm-6">
-                        <h1> Get The Competitive Advantage With Our Services</h1>
-                        <p> We develop innovative technologies such as robotics, artificial intelligence, computer networking, system management, and social networking. </p>
-                        <div class="flex">
-                            <a href="#" class="siteBtn primaryBtn"> <span> get started now </span> </a>
-                            <a href="#" class="siteBtn outlineBtn"> <span> contact us </span></a>
+                <div class="headerContent">
+                    <div class="row">
+                        <div class="col-12 col-sm-6">
+                            <h1> Get The Competitive Advantage With Our Services</h1>
+                            <p> We develop innovative technologies such as robotics, artificial intelligence, computer networking, system management, and social networking. </p>
+                            <div class="flex">
+                                <a href="#" class="siteBtn primaryBtn"> <span> get started now </span> </a>
+                                <a href="#" class="siteBtn outlineBtn"> <span> contact us </span></a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </header>
+    </section>
 
     <!-- News  -->
-    <section class="posts secPadding">
+    <section class="posts secPadding" id="posts">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-sm-4 wow fadeInUp" data-wow-delay=".2s">
@@ -105,15 +106,15 @@
     </section>
 
     <!-- Services  -->
-    <section class="services secPadding">
+    <section class="services secPadding" id="services">
         <div class="container">
-            <div class="secHead secHead-center">
+            <div class="secHead secHead-center wow fadeInUp" data-wow-delay=".1s">
                 <h5> our services </h5>
                 <h2> At The Zenith Of Perfection </h2>
             </div>
             <div class="secContent">
                 <div class="row">
-                    <div class="col-12 col-sm-4 wow fadInUp" data-wow-delay=".2s">
+                    <div class="col-12 col-sm-4 wow fadeInUp" data-wow-delay=".3s">
                         <div class="service">
                             <div class="serviceIcon"> <img src="images/icon-1.png" alt="icon" class="img-fluid"> </div>
                             <div class="serviceContent">
@@ -122,7 +123,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-sm-4 wow fadInUp" data-wow-delay=".2s">
+                    <div class="col-12 col-sm-4 wow fadeInUp" data-wow-delay=".6s">
                         <div class="service">
                             <div class="serviceIcon"> <img src="images/icon-2.png" alt="icon" class="img-fluid"> </div>
                             <div class="serviceContent">
@@ -131,7 +132,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-sm-4 wow fadInUp" data-wow-delay=".2s">
+                    <div class="col-12 col-sm-4 wow fadeInUp" data-wow-delay=".9s">
                         <div class="service">
                             <div class="serviceIcon"> <img src="images/icon-3.png" alt="icon" class="img-fluid"> </div>
                             <div class="serviceContent">
@@ -140,7 +141,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-sm-4 wow fadInUp" data-wow-delay=".2s">
+                    <div class="col-12 col-sm-4 wow fadeInUp" data-wow-delay="1.2s">
                         <div class="service">
                             <div class="serviceIcon"> <img src="images/icon-4.png" alt="icon" class="img-fluid"> </div>
                             <div class="serviceContent">
@@ -149,7 +150,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-sm-4 wow fadInUp" data-wow-delay=".2s">
+                    <div class="col-12 col-sm-4 wow fadeInUp" data-wow-delay="1.5s">
                         <div class="service">
                             <div class="serviceIcon"> <img src="images/icon-5.png" alt="icon" class="img-fluid"> </div>
                             <div class="serviceContent">
@@ -158,7 +159,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-sm-4 wow fadInUp" data-wow-delay=".2s">
+                    <div class="col-12 col-sm-4 wow fadeInUp" data-wow-delay="1.7s">
                         <div class="service">
                             <div class="serviceIcon"> <img src="images/icon-6.png" alt="icon" class="img-fluid"> </div>
                             <div class="serviceContent">
@@ -169,7 +170,7 @@
                     </div>
                 </div>
 
-                <div class="servicesBtns">
+                <div class="servicesBtns wow fadeInUp" data-wow-delay=".4s">
                     <a href="#" class="siteBtn primaryBtn"> <span> View Our Design Team</span> </a>
                     <a href="#" class="siteBtn outlineBtn"> <span> Get A Project Estimate </span></a>
                 </div>
@@ -178,21 +179,21 @@
     </section>
 
     <!-- Partners  -->
-    <div class="partners secPadding">
+    <section class="partners secPadding" id="partners">
         <div class="container">
             <div class="partnersContent">
                 <div class="partnerHead">
-                    <div class="secHead secHead-white">
+                    <div class="secHead secHead-white wow fadeInUp" data-wow-delay=".2s">
                         <h5> our partners </h5>
                         <h2> check our partners </h2>
                     </div>
-                    <div class="customNav">
+                    <div class="customNav wow fadeInUp" data-wow-delay=".4s">
                         <button type="button" class="customBtn parntnerNext"> <span> <i class="fas fa-chevron-left"></i> </span> </button>
                         <button type="button" class="customBtn parntnerPrevious"> <span> <i class="fas fa-chevron-right"></i> </span> </button>
                     </div>
                 </div>
                 <div class="secContent">
-                    <div class="parnterSlider">
+                    <div class="parnterSlider wow fadeInUp" data-wow-delay=".6s">
                         <div class="owl-carousel owl-theme partnerOwl" id="partnerOwl">
                             <div class="item">
                                 <div class="partner">
@@ -229,14 +230,14 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
     <!-- Features -->
-    <div class="features secPadding">
+    <section class="features secPadding" id="portfolio">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-sm-6">
-                    <div class="featuresContent">
+                    <div class="featuresContent wow fadeInLeft" data-wow-delay=".2s">
                         <div class="secHead">
                             <h5> Our Top priority is </h5>
                             <h2> Clients Satisfaction </h2>
@@ -248,17 +249,17 @@
                 </div>
                 <div class="col-12 col-sm-6">
                     <div class="featuresData">
-                        <div class="clientVector"> <img src="images/feature-2.jpg" alt="Client Vector" class="img-fluid w-100 h-100"></div>
+                        <div class="clientVector wow fadeInRight" data-wow-delay=".4s"> <img src="images/feature-2.jpg" alt="Client Vector" class="img-fluid w-100 h-100"></div>
                         <div class="statistics">
-                            <div class="statistic">
+                            <div class="statistic wow fadeInUp" data-wow-delay=".7s">
                                 <h3> 1544 </h3>
                                 <h6> Projects worked on for various clients </h6>
                             </div>
-                            <div class="statistic">
+                            <div class="statistic wow fadeInUp" data-wow-delay=".9s">
                                 <h3> 4 </h3>
                                 <h6> Years of design work experience </h6>
                             </div>
-                            <div class="statistic">
+                            <div class="statistic wow fadeInUp" data-wow-delay="1.1s">
                                 <h3> 300 </h3>
                                 <h6> And more satisfied clients worldwide </h6>
                             </div>
@@ -267,24 +268,24 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
     <!-- Team  -->
-    <div class="partners team secPadding">
+    <section class="partners team secPadding" id="team">
         <div class="container">
             <div class="partnersContent">
                 <div class="partnerHead">
-                    <div class="secHead secHead-white">
+                    <div class="secHead secHead-white wow fadeInUp" data-wow-delay=".2s">
                         <h5> Our Team  </h5>
                         <h2> check our Teamwork  </h2>
                     </div>
-                    <div class="customNav">
+                    <div class="customNav wow fadeInUp" data-wow-delay=".4s">
                         <button type="button" class="customBtn teamNext"> <i class="fas fa-chevron-left"></i> </button>
                         <button type="button" class="customBtn teamPrevious"> <i class="fas fa-chevron-right"></i> </button>
                     </div>
                 </div>
                 <div class="secContent">
-                    <div class="parnterSlider">
+                    <div class="parnterSlider wow fadeInUp" data-wow-delay=".6s">
                         <div class="owl-carousel owl-theme teamOwl">
                             <div class="item">
                                 <div class="empolyee">
@@ -357,47 +358,47 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
   
     <!-- Clients  -->
-    <div class="clients secPadding">
+    <section class="clients secPadding" id="clients">
         <div class="container">
-            <div class="secHead secHead-center">
+            <div class="secHead secHead-center wow fadeInUp" data-wow-delay=".2s">
                 <h5> our client </h5>
                 <h2> check our clients </h2>
             </div>
             <div class="secContent">
                 <div class="row">
-                    <div class="col-6 col-sm-3">
+                    <div class="col-6 col-sm-3 wow fadeInUp" data-wow-delay=".4s">
                         <div class="client">  <img src="images/client-1.png" alt="client" class="img-fluid"> </div>
                     </div>
-                    <div class="col-6 col-sm-3">
+                    <div class="col-6 col-sm-3 wow fadeInUp" data-wow-delay=".6s">
                         <div class="client">  <img src="images/client-2.png" alt="client" class="img-fluid"> </div>
                     </div>
-                    <div class="col-6 col-sm-3">
+                    <div class="col-6 col-sm-3 wow fadeInUp" data-wow-delay=".8s">
                         <div class="client">  <img src="images/client-3.png" alt="client" class="img-fluid"> </div>
                     </div>
-                    <div class="col-6 col-sm-3">
+                    <div class="col-6 col-sm-3 wow fadeInUp" data-wow-delay="1s">
                         <div class="client">  <img src="images/client-4.png" alt="client" class="img-fluid"> </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
     <!-- Footer  -->
-    <div class="footer secPadding">
+    <section class="footer secPadding" id="contact">
         <div class="container">
             <div class="footerContent">
                 <div class="row">
                     <div class="col-12 col-sm-7">
-                        <div class="footerInfo">
+                        <div class="footerInfo wow fadeInUp" data-wow-delay=".2s">
                             <h2> the bridge technology </h2>
                             <h5> Our services include system and network administration, monitoring, and maintenance. We also offer consulting services to help business clients develop and implement their network infrastructure. </h5>
                         </div>
                     </div>
                     <div class="col-12 col-sm-5">
-                        <div class="newsletter">
+                        <div class="newsletter wow fadeInUp" data-wow-delay=".4s">
                             <div class="newsletter-icon"> <span> <i class="far fa-envelope-open"></i> </span> </div>
                             <h2> newsletter</h2>
                             <p> Stay up to date with our latest news and products </p>
@@ -411,7 +412,7 @@
                         </div>
                     </div>
                     <div class="col-12">
-                        <div class="copyright">
+                        <div class="copyright wow fadeInUp" data-wow-delay=".6s">
                             <div class="footerMenu">
                                 <ul>
                                     <li> <a href="index.html"> home </a></li>
@@ -427,7 +428,7 @@
                 </div>
             </div>   
         </div>
-    </div>
+    </section>
 
 
     <!-- JS -->
